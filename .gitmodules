@@ -1,0 +1,6 @@
+[submodule "pony-mode"]
+	path = pony-mode
+	url = https://github.com/davidmiller/pony-mode.git
+[submodule "flymake"]
+	path = flymake
+	url = https://github.com/akaihola/flymake-python.git
