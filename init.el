@@ -17,10 +17,10 @@
 (column-number-mode 1)
 (show-paren-mode 1)
 (global-font-lock-mode 1)
-(rainbow-delimiters-mode 1)
 (yas-global-mode 1)
 (wc-mode 1)
 (guru-global-mode 1)
+(global-rainbow-delimiters-mode)
 (golden-ratio-enable)
 
 ;; Set global variables
@@ -33,7 +33,9 @@
 (add-hook 'before-save-hook 'gofmt-before-save)
 
 ;; Set theme
-(load-theme 'zenburn 't)
+(if (version<= "24" (caddr (split-string (emacs-version))))
+	(load-theme 'zenburn 't)
+  (load-theme 'zenburn))
 
 ;; Set up key chords
 ;; (key-chord-mode 1)
