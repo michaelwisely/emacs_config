@@ -17,9 +17,11 @@
 (column-number-mode 1)
 (show-paren-mode 1)
 (global-font-lock-mode 1)
+(rainbow-delimiters-mode 1)
 (yas-global-mode 1)
-(key-chord-mode 1)
 (wc-mode 1)
+(guru-global-mode 1)
+(golden-ratio-enable)
 
 ;; Set global variables
 (setq default-tab-width 4)
@@ -34,6 +36,7 @@
 (load-theme 'zenburn 't)
 
 ;; Set up key chords
+;; (key-chord-mode 1)
 ;; (key-chord-define-global "jk" 'forward-word)
 ;; (key-chord-define-global "df" 'backward-word)
 

@@ -1,6 +1,7 @@
 #!/usr/bin/env emacs --script
 
 (require 'package)
+(add-to-list 'package-archives '("melpa" . "http://melpa.milkbox.net/packages/") t)
 (package-initialize)
 
 (defvar my-packages
@@ -9,11 +10,14 @@
 	flymake-css
 	flymake-cursor
 	go-mode
+	golden-ratio
+	guru-mode
 	haskell-mode
 	js2-mode
 	less-css-mode
 	magit
 	nginx-mode
+	rainbow-delimiters
 	rainbow-mode
 	undo-tree
 	wc-mode
