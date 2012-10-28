@@ -4,6 +4,7 @@
 (add-to-list 'package-archives '("melpa" . "http://melpa.milkbox.net/packages/") t)
 (package-initialize)
 
+(add-to-list 'load-path "~/.emacs.d/flex_bison/")
 (add-to-list 'load-path "~/.emacs.d/pony-mode/src")
 
 ;; Imports
