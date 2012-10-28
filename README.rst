@@ -24,7 +24,7 @@ clone.
 
 ..
 
-  git clone https://github.com/michaelwisely/emacs-config.git ~/.emacs.d/
+  git clone https://github.com/michaelwisely/emacs_config.git ~/.emacs.d/
 
 If you're using Emacs 24, you should be fine. If you're using Emacs
 23, you should download package.el into ``.emacs.d/``. Make sure you're
