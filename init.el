@@ -8,9 +8,6 @@
 (add-hook 'coffee-mode-hook 'flymake-coffee-load)
 (add-to-list 'auto-mode-alist '("\\.yaml$" . yaml-mode))
 
-(require 'flymake-python-pyflakes)
-(add-hook 'python-mode-hook 'flymake-python-pyflakes-load)
-
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -35,3 +32,6 @@
  )
 
 (install-missing-packages)
+
+(require 'flymake-python-pyflakes)
+(add-hook 'python-mode-hook 'flymake-python-pyflakes-load)
