@@ -3,11 +3,6 @@
 (require 'elisp-format)
 (require 'prelude-packages)
 
-(add-hook 'before-save-hook 'gofmt-before-save)
-(add-hook 'before-save-hook 'whitespace-cleanup)
-(add-hook 'coffee-mode-hook 'flymake-coffee-load)
-(add-to-list 'auto-mode-alist '("\\.yaml$" . yaml-mode))
-
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -33,5 +28,18 @@
 
 (install-missing-packages)
 
+;; Python Flymake
 (require 'flymake-python-pyflakes)
 (add-hook 'python-mode-hook 'flymake-python-pyflakes-load)
+
+;; Go fmt hook
+(add-hook 'before-save-hook 'gofmt-before-save)
+
+;; Clean up whitespace
+(add-hook 'before-save-hook 'whitespace-cleanup)
+
+;; Coffeelint coffee files
+(add-hook 'coffee-mode-hook 'flymake-coffee-load)
+
+;; Use YAML mode on .yaml files
+(add-to-list 'auto-mode-alist '("\\.yaml$" . yaml-mode))
