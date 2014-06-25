@@ -41,5 +41,9 @@
 ;; Coffeelint coffee files
 (add-hook 'coffee-mode-hook 'flymake-coffee-load)
 
+(add-hook 'markdown-mode-hook
+          (lambda ()
+            (flyspell-mode)))
+
 ;; Use YAML mode on .yaml files
 (add-to-list 'auto-mode-alist '("\\.yaml$" . yaml-mode))
