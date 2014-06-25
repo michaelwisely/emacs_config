@@ -14,7 +14,7 @@
  '(coffee-tab-width 4)
  '(column-number-mode t)
  '(elisp-format-column 80)
- '(flymake-coffee-coffeelint-configuration-file "/Users/mwwcp2/.coffeelint.json")
+ '(flymake-coffee-coffeelint-configuration-file (expand-file-name "~/.coffeelint.json"))
  '(indent-tabs-mode nil)
  '(js-indent-level 2)
  '(package-archives (quote (("gnu" . "http://elpa.gnu.org/packages/") ("melpa" . "http://melpa.milkbox.net/packages/") ("marmalade" . "http://marmalade-repo.org/packages/"))))
