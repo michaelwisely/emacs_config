@@ -18,6 +18,7 @@
  '(haskell-mode-hook (quote (turn-on-haskell-indentation)))
  '(indent-tabs-mode nil)
  '(js-indent-level 2)
+ '(org-agenda-files (quote ("~/code/todo/todo.org")))
  '(package-archives (quote (("gnu" . "http://elpa.gnu.org/packages/") ("melpa" . "http://melpa.milkbox.net/packages/") ("marmalade" . "http://marmalade-repo.org/packages/"))))
  '(require-final-newline t))
 (custom-set-faces
@@ -28,6 +29,12 @@
  )
 
 (install-missing-packages)
+
+;; Set up global shortcuts for Org
+(global-set-key "\C-cl" 'org-store-link)
+(global-set-key "\C-cc" 'org-capture)
+(global-set-key "\C-ca" 'org-agenda)
+(global-set-key "\C-cb" 'org-iswitchb)
 
 ;; Python Flymake
 (require 'flymake-python-pyflakes)
@@ -42,7 +49,11 @@
 ;; Coffeelint coffee files
 (add-hook 'coffee-mode-hook 'flymake-coffee-load)
 
+;; Spell check
 (add-hook 'markdown-mode-hook
+          (lambda ()
+            (flyspell-mode)))
+(add-hook 'org-mode-hook
           (lambda ()
             (flyspell-mode)))
 
