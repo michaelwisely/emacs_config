@@ -20,7 +20,8 @@
  '(js-indent-level 2)
  '(org-agenda-files (quote ("~/code/todo/todo.org")))
  '(package-archives (quote (("gnu" . "http://elpa.gnu.org/packages/") ("melpa" . "http://melpa.milkbox.net/packages/") ("marmalade" . "http://marmalade-repo.org/packages/"))))
- '(require-final-newline t))
+ '(require-final-newline t)
+ '(scss-compile-at-save nil))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
