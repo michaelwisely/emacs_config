@@ -10,7 +10,13 @@
  ;; If there is more than one, they won't work right.
  '(TeX-PDF-mode t)
  '(TeX-view-program-list (quote (("Default Viewer" "open %o"))))
- '(TeX-view-program-selection (quote (((output-dvi style-pstricks) "dvips and gv") (output-dvi "xdvi") (output-pdf "Default Viewer") (output-html "xdg-open"))))
+ '(TeX-view-program-selection
+   (quote
+    (((output-dvi style-pstricks)
+      "dvips and gv")
+     (output-dvi "xdvi")
+     (output-pdf "Default Viewer")
+     (output-html "xdg-open"))))
  '(coffee-tab-width 4)
  '(column-number-mode t)
  '(elisp-format-column 80)
@@ -19,7 +25,11 @@
  '(indent-tabs-mode nil)
  '(js-indent-level 2)
  '(org-agenda-files (quote ("~/code/todo/todo.org")))
- '(package-archives (quote (("gnu" . "http://elpa.gnu.org/packages/") ("melpa" . "http://melpa.milkbox.net/packages/") ("marmalade" . "http://marmalade-repo.org/packages/"))))
+ '(package-archives
+   (quote
+    (("gnu" . "http://elpa.gnu.org/packages/")
+     ("melpa" . "http://melpa.milkbox.net/packages/")
+     ("marmalade" . "http://marmalade-repo.org/packages/"))))
  '(require-final-newline t)
  '(scss-compile-at-save nil))
 (custom-set-faces
