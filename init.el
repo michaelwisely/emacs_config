@@ -24,7 +24,7 @@
  '(haskell-mode-hook (quote (turn-on-haskell-indentation)))
  '(indent-tabs-mode nil)
  '(js-indent-level 2)
- '(org-agenda-files (quote ("~/code/todo/todo.org")))
+ '(org-agenda-files (directory-files "~/code/todo" t "\\.org" nil))
  '(package-archives
    (quote
     (("gnu" . "http://elpa.gnu.org/packages/")
