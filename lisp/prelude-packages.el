@@ -8,7 +8,7 @@
                      elixir-mode flymake-coffee flymake-cursor flymake-easy
                      flymake-python-pyflakes git-commit-mode git-rebase-mode
                      gitattributes-mode gitconfig-mode gitignore-mode go-mode
-                     haml-mode haskell-mode hl-todo less-css-mode
+                     haml-mode haskell-mode hl-todo julia-mode less-css-mode
                      literate-coffee-mode magit markdown-mode matlab-mode
                      mustache-mode org pandoc-mode pony-mode s sass-mode
                      scss-mode yaml-mode yasnippet)
