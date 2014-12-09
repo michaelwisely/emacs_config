@@ -23,6 +23,11 @@
         (return
          t)))
 
+(defun prelude-missing-packages ()
+  "Lists packages that are installed but not in prelude-packages"
+  (cl-set-difference package-activated-list prelude-packages)
+  )
+
 (defun install-missing-packages ()
   "Installs all packages from prelude-packages that are not currently installed"
   (unless (prelude-packages-installed-p)
