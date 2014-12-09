@@ -15,6 +15,7 @@
   "A list of packages to ensure are installed at launch.")
 
 (defun prelude-packages-installed-p ()
+  "Checks to see whether all packages in prelude-packages are installed"
   (loop for p in prelude-packages when (not (package-installed-p p)) do
         (return
          nil)
@@ -23,6 +24,7 @@
          t)))
 
 (defun install-missing-packages ()
+  "Installs all packages from prelude-packages that are not currently installed"
   (unless (prelude-packages-installed-p)
     ;; check for new packages (package versions)
     (message "%s" "Emacs Prelude is now refreshing its package database...")
