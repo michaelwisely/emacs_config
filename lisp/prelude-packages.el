@@ -4,14 +4,15 @@
 (package-initialize)
 
 (defvar prelude-packages
-  '(angular-snippets auctex bison-mode coffee-mode csharp-mode dash django-mode
-                     elixir-mode flymake-coffee flymake-cursor flymake-easy
+  '(angular-snippets auctex bison-mode cm-mode coffee-mode csharp-mode ctable
+                     dash django-mode dockerfile-mode elixir-mode ess
+                     ess-R-data-view flymake-coffee flymake-cursor flymake-easy
                      flymake-python-pyflakes git-commit-mode git-rebase-mode
                      gitattributes-mode gitconfig-mode gitignore-mode go-mode
-                     haml-mode haskell-mode hl-todo julia-mode less-css-mode
-                     literate-coffee-mode magit markdown-mode matlab-mode
-                     mustache-mode org pandoc-mode pony-mode s sass-mode
-                     scss-mode yaml-mode yasnippet)
+                     haml-mode haskell-mode hl-todo hyde julia-mode
+                     less-css-mode literate-coffee-mode magit markdown-mode
+                     matlab-mode mustache-mode org pandoc-mode pony-mode popup
+                     rust-mode s sass-mode scss-mode yaml-mode yasnippet)
   "A list of packages to ensure are installed at launch.")
 
 (defun prelude-packages-installed-p ()
@@ -25,8 +26,7 @@
 
 (defun prelude-missing-packages ()
   "Lists packages that are installed but not in prelude-packages"
-  (cl-set-difference package-activated-list prelude-packages)
-  )
+  (cl-set-difference package-activated-list prelude-packages))
 
 (defun install-missing-packages ()
   "Installs all packages from prelude-packages that are not currently installed"
