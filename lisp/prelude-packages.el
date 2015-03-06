@@ -5,7 +5,7 @@
 
 (defvar prelude-packages
   '(angular-snippets auctex bison-mode cm-mode coffee-mode csharp-mode ctable
-                     dash django-mode dockerfile-mode elixir-mode ess
+                     dash django-mode dockerfile-mode elixir-mode elm-mode ess
                      ess-R-data-view flymake-coffee flymake-cursor flymake-easy
                      flymake-python-pyflakes git-commit-mode git-rebase-mode
                      gitattributes-mode gitconfig-mode gitignore-mode go-mode
