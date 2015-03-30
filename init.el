@@ -19,6 +19,7 @@
      (output-html "xdg-open"))))
  '(coffee-tab-width 4)
  '(column-number-mode t)
+ '(elfeed-feeds (quote ("https://www.headspace.com/blog/rss")))
  '(elisp-format-column 80)
  '(flymake-coffee-coffeelint-configuration-file (expand-file-name "~/.coffeelint.json"))
  '(haskell-mode-hook (quote (turn-on-haskell-indentation)))
