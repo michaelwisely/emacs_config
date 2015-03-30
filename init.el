@@ -24,7 +24,7 @@
  '(flymake-coffee-coffeelint-configuration-file (expand-file-name "~/.coffeelint.json"))
  '(haskell-mode-hook (quote (turn-on-haskell-indentation)))
  '(indent-tabs-mode nil)
- '(js-indent-level 2)
+ '(js-indent-level 4)
  '(org-agenda-files (directory-files "~/code/todo" t "\\.org" nil))
  '(package-archives
    (quote
