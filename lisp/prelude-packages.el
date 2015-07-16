@@ -4,16 +4,9 @@
 (package-initialize)
 
 (defvar prelude-packages
-  '(angular-snippets auctex bison-mode cm-mode coffee-mode csharp-mode ctable
-                     dash django-mode dockerfile-mode elfeed elixir-mode
-                     elm-mode ess ess-R-data-view flymake-coffee flymake-cursor
-                     flymake-easy flymake-python-pyflakes git-commit-mode
-                     git-rebase-mode gitattributes-mode gitconfig-mode
-                     gitignore-mode go-mode haml-mode haskell-mode hl-todo hyde
-                     julia-mode less-css-mode literate-coffee-mode magit
-                     markdown-mode matlab-mode mustache-mode org pandoc-mode
-                     pony-mode popup rust-mode s sass-mode scss-mode yaml-mode
-                     yasnippet)
+  '(auctex coffee-mode elixir-mode elm-mode flymake-coffee flycheck-pyflakes
+           gitignore-mode go-mode haskell-mode julia-mode less-css-mode
+           markdown-mode rust-mode sass-mode scss-mode yaml-mode)
   "A list of packages to ensure are installed at launch.")
 
 (defun prelude-packages-installed-p ()
