@@ -21,7 +21,6 @@
  '(column-number-mode t)
  '(elisp-format-column 80)
  '(flymake-coffee-coffeelint-configuration-file (expand-file-name "~/.coffeelint.json"))
- '(haskell-mode-hook (quote (turn-on-haskell-indentation)))
  '(indent-tabs-mode nil)
  '(js-indent-level 4)
  '(org-agenda-files (directory-files "~/code/todo" t "\\.org" nil))
@@ -59,6 +58,9 @@
 
 ;; Coffeelint coffee files
 (add-hook 'coffee-mode-hook 'flymake-coffee-load)
+
+;; Haskell indentation
+(add-hook 'haskell-mode-hook 'turn-on-haskell-indentation)
 
 ;; Spell check
 (add-hook 'markdown-mode-hook
