@@ -19,7 +19,6 @@
      (output-html "xdg-open"))))
  '(coffee-tab-width 4)
  '(column-number-mode t)
- '(elfeed-feeds (quote ("https://www.headspace.com/blog/rss")))
  '(elisp-format-column 80)
  '(flymake-coffee-coffeelint-configuration-file (expand-file-name "~/.coffeelint.json"))
  '(haskell-mode-hook (quote (turn-on-haskell-indentation)))
@@ -29,8 +28,8 @@
  '(package-archives
    (quote
     (("gnu" . "http://elpa.gnu.org/packages/")
-     ("melpa" . "http://melpa.milkbox.net/packages/")
-     ("marmalade" . "http://marmalade-repo.org/packages/"))))
+     ("melpa" . "http://melpa.org/packages/")
+     )))
  '(require-final-newline t)
  '(scss-compile-at-save nil))
 (custom-set-faces
@@ -49,8 +48,8 @@
 (global-set-key "\C-cb" 'org-iswitchb)
 
 ;; Python Flymake
-(require 'flymake-python-pyflakes)
-(add-hook 'python-mode-hook 'flymake-python-pyflakes-load)
+(require 'flycheck-pyflakes)
+(add-hook 'python-mode-hook 'flycheck-mode)
 
 ;; Go fmt hook
 (add-hook 'before-save-hook 'gofmt-before-save)
