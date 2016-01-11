@@ -47,7 +47,6 @@
 (global-set-key "\C-cb" 'org-iswitchb)
 
 ;; Python Flymake
-(require 'flycheck-pyflakes)
 (add-hook 'python-mode-hook 'flycheck-mode)
 
 ;; Go fmt hook

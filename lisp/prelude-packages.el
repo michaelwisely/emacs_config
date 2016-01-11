@@ -4,9 +4,9 @@
 (package-initialize)
 
 (defvar prelude-packages
-  '(auctex coffee-mode elixir-mode elm-mode flymake-coffee flycheck-pyflakes
-           gitignore-mode go-mode haskell-mode julia-mode less-css-mode
-           markdown-mode rust-mode sass-mode scss-mode yaml-mode)
+  '(auctex coffee-mode elixir-mode elm-mode flymake-coffee gitignore-mode
+           go-mode haskell-mode julia-mode less-css-mode markdown-mode rust-mode
+           sass-mode scss-mode yaml-mode)
   "A list of packages to ensure are installed at launch.")
 
 (defun prelude-packages-installed-p ()
