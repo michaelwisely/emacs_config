@@ -17,6 +17,13 @@
      (output-dvi "xdvi")
      (output-pdf "Default Viewer")
      (output-html "xdg-open"))))
+ '(c-basic-offset 2)
+ '(c-default-style
+   (quote
+    ((c++-mode . "linux")
+     (java-mode . "java")
+     (awk-mode . "awk")
+     (other . "gnu"))))
  '(coffee-tab-width 4)
  '(column-number-mode t)
  '(elisp-format-column 80)
