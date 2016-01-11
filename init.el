@@ -52,7 +52,7 @@
 ;; Go fmt hook
 (add-hook 'before-save-hook 'gofmt-before-save)
 
-;; Clean up whitespace
+;; Clean up whitespace on save
 (add-hook 'before-save-hook 'whitespace-cleanup)
 
 ;; Coffeelint coffee files
@@ -68,6 +68,3 @@
 (add-hook 'org-mode-hook
           (lambda ()
             (flyspell-mode)))
-
-;; Use YAML mode on .yaml files
-(add-to-list 'auto-mode-alist '("\\.yaml$" . yaml-mode))
